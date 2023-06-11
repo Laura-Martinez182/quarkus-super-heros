@@ -1,0 +1,7 @@
+io\quarkus\workshop\superheroes\version\deployment\ExtensionVersionProcessor$$accessor.class
+META-INF\quarkus-javadoc.properties
+io\quarkus\workshop\superheroes\version\deployment\VersionConfig$$accessor.class
+io\quarkus\workshop\superheroes\version\deployment\VersionConfig.class
+META-INF\quarkus-config-roots.list
+META-INF\quarkus-build-steps.list
+io\quarkus\workshop\superheroes\version\deployment\ExtensionVersionProcessor.class

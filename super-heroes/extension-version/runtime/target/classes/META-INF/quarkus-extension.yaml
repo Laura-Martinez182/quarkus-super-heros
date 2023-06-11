@@ -1,0 +1,9 @@
+---
+name: "Extension Version"
+metadata:
+  built-with-quarkus-core: "3.0.3.Final"
+  minimum-java-version: "11"
+  extension-dependencies:
+  - "io.quarkus:quarkus-arc"
+  - "io.quarkus:quarkus-core"
+artifact: "io:extension-version::jar:2.0"

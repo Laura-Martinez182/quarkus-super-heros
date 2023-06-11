@@ -13,6 +13,8 @@
     <module>super-heroes/rest-villains</module>
     <module>super-heroes/rest-heroes</module>
     <module>super-heroes/rest-fights</module>
+    <module>super-heroes/event-statistics</module>
+    <module>super-heroes/extension-version</module>
   </modules>
   <properties>
     <assembly-plugin.version>3.3.0</assembly-plugin.version>
