@@ -66,6 +66,12 @@
       <artifactId>quarkus-junit5-mockito</artifactId>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>io.quarkiverse.pact</groupId>
+          <artifactId>quarkus-pact-consumer</artifactId>
+          <version>1.0.1.Final</version>
+          <scope>test</scope>
+      </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive</artifactId>

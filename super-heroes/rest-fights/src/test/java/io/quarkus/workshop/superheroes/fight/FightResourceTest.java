@@ -39,6 +39,7 @@ public class FightResourceTest {
     @InjectMock(convertScopes = true)
     @RestClient
     HeroProxy heroProxy;
+    VillainProxy villainProxy;
 
     @BeforeEach
     public void setup() {

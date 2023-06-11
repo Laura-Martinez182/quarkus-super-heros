@@ -40,9 +40,16 @@ public class HeroResource {
     @GET
     @Path("/random")
     @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
-    public Uni<Hero> getRandomHero() {
+    public Uni<Response> getRandomHero() {
         return Hero.findRandom()
-            .invoke(h -> logger.debugf("Found random hero: %s", h));
+            .onItem().ifNotNull().transform(h -> {
+                this.logger.debugf("Found random hero: %s", h);
+                return Response.ok(h).build();
+            })
+            .onItem().ifNull().continueWith(() -> {
+                this.logger.debug("No random villain found");
+                return Response.status(Response.Status.NOT_FOUND).build();
+            });
     }
 
     @Operation(summary = "Returns all the heroes from the database")
